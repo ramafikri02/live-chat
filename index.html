@@ -8,28 +8,176 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9160f1ecce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <a class="open-button" onclick="openForm()"><i class="fas fa-comments"></i></a>
+        <a class="open-button" onclick="openChat()" id="openChat"><i class="fas fa-comments"></i></a>
 
         <div class="row">
             <div class="col-md-12">
-                <div class="chat-popup" id="myForm">
-                    <form action="" class="form-container">
+                <div class="popup popup--chat" id="myChat">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="cancel" onclick="closeForm()">X</a>
+                        </div>
+                    </div>
+                    <div class="row chat">
+                        <div class="col-12 main">
+                            <div class="row">
+                                <div class="col-12 header">
+                                    <img src="img/logo.png" alt="freshchat" class="logo">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 content content--message">
+                                    <p class="sub-title"> Message Us</p>
+                                    <hr>
+                                    <div class="row open-message" onclick="openMessage()">
+                                        <div class="col-md-2">
+                                            <i class="fas fa-headset fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <bold class="text-head">Help</bold>
+                                            <br>
+                                            <bold class="text-content">How many i help you?</bold>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="text-time">10.33 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 content content--faq">
+                                    <p class="sub-title"> FAQs</p>
+                                    <hr>
+                                    <div class="row open-tag" onclick="openTag()">
+                                        <div class="col-md-2">
+                                            <i class="fas fa-tags"></i>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <bold class="text-head">Pricing Plans</bold>
+                                        </div>
+                                        <div class="col-md-10 offset-2 ">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row open-tag" onclick="openTag()">
+                                        <div class="col-md-2">
+                                            <i class="fas fa-balance-scale-right"></i>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <bold class="text-head">Comparisons</bold>
+                                        </div>
+                                        <div class="col-md-10 offset-2 ">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup popup--message" id="myMessage">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="cancel" onclick="closeForm()">X</a>
+                        </div>
+                    </div>
+                    <div class="row chat">
+                        <div class="col-12 main">
+                            <div class="row">
+                                <div class="col-12 header">
+                                    <div class="row">
+                                        <div class="col-md-1 btn-back" onclick="backMessage()">
+                                            <i class="fas fa-chevron-left icon-back"></i>
+                                        </div>
+                                        <div class="col-md-11 message-help">
+                                            <bold>Help</bold>
+                                            <br>
+                                            <div class="text-help">
+                                                <bold>Typically replies within few hours</bold>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 content content-help">
+                                    <div class="row profile-admin">
+                                        <div class="col-md-11">
+                                            <img src="https://img.icons8.com/bubbles/2x/admin-settings-male.png"
+                                                class="profile-image" alt="">
+                                            <bold>Kaido</bold>
+                                        </div>
+                                    </div>
+                                    <div class="scroll">
+                                        <div class="chat-panel">
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <div class="chat-bubble chat-bubble--left">
+                                                        <p>Hello dudasddddddd adsae!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <div class="chat-bubble chat-bubble--left">
+                                                        <p>Hello dudasddddddd adsae!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10 offset-md-2">
+                                                    <div class="chat-bubble chat-bubble--right">
+                                                        <p>Helloasdddddsaddddddddd dddddddddddddd dude!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <div class="chat-bubble chat-bubble--left">
+                                                        <p>Hello dudasddddddd adsae!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10 offset-md-2">
+                                                    <div class="chat-bubble chat-bubble--right">
+                                                        <p>Helloasddddddd dude!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <div class="chat-bubble chat-bubble--left">
+                                                        <p>How many i help you?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-12">
+                            <a class="cancel" onclick="closeForm()">X</a>
+                        </div>
+                    </div>
+                    <form action="" class="">
                         <div class="settings-tray">
                             <div class="row no-gutters">
-                                <div class="col-md-10">
+                                <div class="col-md-12">
                                     <div class="friend-drawer" style="float:left;">
                                         <img class="profile-image"
                                             src="https://img.icons8.com/bubbles/2x/admin-settings-male.png" alt="">
                                         <b>Jeki</b>
                                     </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <a class="cancel" onclick="closeForm()"><i class="fas fa-times"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -70,6 +218,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="chat-bubble chat-bubble--left">
+                                            <p>How many i help you?</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -85,13 +240,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    </div>
+    <script src="js/app.js"></script>
 
 </body>
 
