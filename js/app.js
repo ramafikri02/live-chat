@@ -1,6 +1,6 @@
 function openChat() {
-    document.getElementById("myChat").style.display = "block";
-    document.getElementById("myMessage").style.display = "none";
+    document.getElementById("myChat").style.display = "none";
+    document.getElementById("myMessage").style.display = "block";
     document.getElementById("openChat").style.display = "none";
 }
 
