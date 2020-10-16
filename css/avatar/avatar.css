@@ -1,0 +1,17 @@
+.avatar-image {
+  width: 45px;
+  height: 45px;
+}
+
+.avatar-freshchat {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.avatar-admin {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+/*# sourceMappingURL=avatar.css.map */

@@ -1,0 +1,70 @@
+.content {
+  background: #fff;
+  bottom: 30px;
+  margin-left: 15px;
+  height: auto;
+  max-height: 380px;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  border-top: 10px #000000;
+  -webkit-box-shadow: 1px 1px 5px #b8b8b8;
+          box-shadow: 1px 1px 5px #b8b8b8;
+}
+
+.content--message {
+  -webkit-box-shadow: 1px 1px 5px #b8b8b8;
+          box-shadow: 1px 1px 5px #b8b8b8;
+}
+
+.content--message .header-message {
+  bottom: -50px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.content--faq {
+  margin-top: 20px;
+  -webkit-box-shadow: 1px 1px 5px #b8b8b8;
+          box-shadow: 1px 1px 5px #b8b8b8;
+}
+
+.content--faq .header-faq {
+  bottom: -50px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.content--faq .btn-search {
+  margin-top: 10px;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid grey;
+  float: right;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.content .sub-title {
+  color: #002d85;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.content .text-head {
+  font-weight: 600;
+  color: #03102b;
+}
+
+.content .text-content {
+  color: grey;
+  font-size: .9rem;
+}
+
+.content .text-time {
+  color: grey;
+  font-size: .7rem;
+}
+/*# sourceMappingURL=content.css.map */

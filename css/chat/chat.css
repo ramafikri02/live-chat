@@ -1,0 +1,136 @@
+.chat {
+  -webkit-box-shadow: 2px 2px 10px grey;
+          box-shadow: 2px 2px 10px grey;
+  border: 1px grey;
+}
+
+.chat-panel {
+  font-size: 14px;
+  -webkit-animation: fadeInUp .3s ease-in;
+          animation: fadeInUp .3s ease-in;
+}
+
+.chat-time {
+  font-size: 12px;
+  color: grey;
+}
+
+.chat-time--left {
+  margin: -10px 0 10px 70px;
+}
+
+.chat-time--right {
+  margin: -10px 0 10px 295px;
+}
+
+.chat-day {
+  text-align: center;
+  color: grey;
+}
+
+.chat-day .chat-line {
+  opacity: .6;
+}
+
+.chat-day .chat-line--left hr {
+  height: .5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0000), to(grey));
+  background-image: linear-gradient(to right, #0000, grey);
+}
+
+.chat-day .chat-line--right hr {
+  height: .5px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0000), to(grey));
+  background-image: linear-gradient(to left, #0000, grey);
+}
+
+.chat-bubble {
+  padding: 5px 14px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 14px;
+}
+
+.chat-bubble--left {
+  background: #eee;
+  border-radius: 0 12px 12px;
+  float: left;
+  margin-left: 18px;
+  max-width: 250px;
+}
+
+.chat-bubble--left:after {
+  left: 0;
+  border-right-color: #eee;
+  border-left: 0;
+  margin-left: -20px;
+}
+
+.chat-bubble--right {
+  background: #002d85;
+  color: #fff;
+  float: right;
+  max-width: 250px;
+  margin-right: 10px;
+  border-radius: 12px 0 0 12px;
+}
+
+.chat-bubble--right:after {
+  right: 0;
+  border-left-color: #002d85;
+  border-right: 0;
+}
+
+.reply-message {
+  background-color: #fff;
+  min-height: 50px;
+  max-height: 50px;
+  color: grey;
+  -webkit-box-shadow: 0 -5px 5px -5px grey;
+          box-shadow: 0 -5px 5px -5px grey;
+}
+
+.reply-message .form-reply {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.reply-message input {
+  border: none;
+  width: 300px;
+  color: grey;
+}
+
+.reply-message input::-webkit-input-placeholder {
+  opacity: .6;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.reply-message input:-ms-input-placeholder {
+  opacity: .6;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.reply-message input::-ms-input-placeholder {
+  opacity: .6;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.reply-message input::placeholder {
+  opacity: .6;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.reply-message input:focus {
+  outline: none;
+}
+
+.reply-message .icon-input i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=chat.css.map */
